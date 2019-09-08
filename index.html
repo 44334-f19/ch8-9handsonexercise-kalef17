@@ -1,13 +1,155 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Farmer Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
 		
+  table {margin: auto;
+                    border: 10px solid #000;
+                    border-spacing: 0px;
+                    background-color: antiquewhite;}
+            td, th {padding: 0.5em;}
+            caption {font-size: 1.2em;}
+            #wrapper {display: flex;
+                        flex-direction: column;}
+            form {background-color: #eaeaea;
+                    font-family: Arial, sans-serif;
+                    padding: 10px;
+                    min-width: 400px;}
+            fieldset {border: 2px ridge #000;
+                    padding: 10px;}
+            label {float: left;
+                    width: auto;
+                    text-align: right;
+                    padding-right: 10px;
+                    clear: left;
+                    margin-top: 10px;}
+            input, textarea {margin-top: 10px;
+                            display: block;}
+            #stuPers {flex:2;}
+            #stuInfoCol1 {flex:2;}
+            #stuInfoCol2 {flex:3;}
+            #stuRating {flex:2;}
+            input [type="radio"], input[type="checkbox"] {display: inline;}
+       
+            
+            @media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0;
+                    grid-template-columns: 1fr 160px;
+                    grid-template-rows: 200px auto auto 100px;}
+		    h1 { font-size: 200%; }
+			nav ul { text-align: center; }
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em; 
+                     display: inline;
+            
+            
 		</style>
 	</head> 
 <body> 
+    <h1>Kaleigh's Favorite's</h1>
+    <table>
+    <caption>Favorite Movie </caption>
+        <thread>
+        <tr>
+            <th id="movie title">Movie Title:</th>
+             <td headers="movie title">The Longest Ride</td>
+             </tr>
+            <tr>
+            <th id="d">Director:</th>
+                  <td headers="d">George Tillman Jr.</td>
+                </tr>
+              
+            <tr>
+            
+            <th id="l">Leading Actor:</th>
+                   <td headers="l">Scott Eastwood</td>
+                  </tr>
+            <tr>
+            <th id="r">Rating:</th>
+                <td headers="r">PG-13</td>
+                </tr>
+              
+            <tr>
+            <th id="d">Description:</th>
+                <td headers="d">Former bull-riding champion Luke (Scott Eastwood) and college student Sophia (Britt Robertson) are in love, but conflicting paths and ideals threaten to tear them apart: Luke hopes to make a comeback on the rodeo circuit, and Sophia is about to embark on her dream job in New York's art world. As the couple ponder their romantic future, they find inspiration in Ira (Alan Alda), an elderly man whose decades-long romance with his beloved wife withstood the test of time.</td>
+                  </tr>
+            <tr>
+            <th id="l">Review of movie:</th>
+                      
+             <td headers="l"><a href=" https://www.rogerebert.com/reviews/the-longest-ride-2015">The Longest Ride Review</a></td>
+                
+                </tr>
+          </thread>
+        <tbody>
+  
+            
+     </tbody>
+    
+    </table>
+    <h1>Music Survey Form</h1>
+    <p>Required Fields marked with an asterick *</p>
+    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+    <div id="wrapper">
+        <fieldset id="stuPers">
+            <label for="myName">*Name:</label>
+            <input type="text" name="myName" id="myName" required="required"
+                   placeholder="your first and last name">
+                   
+            <label for="myEmail">*E-mail</label>
+            <input type="email" name="myEmail" id="MyEmail" required="required"
+            placeholder="you@yourdomain.com">
+                   
+      <div style="height:100px;width:140px;overflow:auto;background-color:white;color:black;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;">This is a scrolling text box. You may add text up to a certain amount of characters. </div>
+            
+           
+        
+             </fieldset>
+    
+            
+        <fieldset id="stuInfoCol1">
+            <legend>Which one?:</legend>
+          
+            <input type="radio" name="myStatus" id="m" value="watching netflix">Watching Netflix<br>
+             <input type="radio" name="myStatus" id="t" value="In the theater">In the theater<br>
+             <input type="radio" name="myStatus" id="o" value="outdoor movie">Outdoor Movie<br>
+    
+            
+            Select favorite tv show:<br>
+             <input type="checkbox" name="myOrg" id="acm" value="ACM">ACM<br>   
+                  <input type="checkbox" name="myOrg" id="f" value="friends">Friends<br>
+                  <input type="checkbox" name="myOrg" id="full" value="full">Full House<br>
+                  <input type="checkbox" name="myOrg" id="j" value="jane">Jane the Virgin<br>
+                  <input type="checkbox" name="myOrg" id="r" value="r">13 Reaons Why<br>
+        </fieldset>
+        <fieldset id="stuInfoCol2">
+            <legend>Movies</legend>
+            <label>Do you like movies:</label>
+            <select size="1" name="movies" id="movies">
+            <option value="On occassion">On Occasision</option>
+                <option value="Not at all">Not at all</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="absolutely">Absoluetly</option>
+                
+            </select>
+            
+         
+        </fieldset>
+        <fieldset id="stuRating">
+          
+            
+            <input id="mySubmit" type="submit" value="Submit">
+            <input id="myReset" type="reset" value="Reset">
+        </fieldset>
+        
+    </div>
+        kaleighfarmer17@gmail.com
+        660-253-4381
+    
+    
+ </form>
 
 </body> 
-</html> 
+</html>  
